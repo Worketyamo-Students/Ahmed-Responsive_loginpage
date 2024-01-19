@@ -45,7 +45,7 @@ body{
 
 /* mise en place et traitement du premier block */
 .main__img{
-    background: url(../img/background.jpg) center top / cover;
+    background: url(../img/background.svg) center top / cover;
     padding: 8rem 2rem;
     width: 40%;
 }
