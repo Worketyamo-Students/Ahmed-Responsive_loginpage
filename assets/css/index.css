@@ -14,6 +14,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 html{
@@ -29,13 +30,15 @@ body{
     padding: 0;
     border: none;
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* traitement de la div principal */
 .main{
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 /* traitement du premier et deuxieme block */
@@ -215,4 +218,52 @@ hr{
 .main__container_other .other_2 img{
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background: url(../img/background.svg) center top / cover;
+        overflow-x: hidden;
+        padding: 4rem;
+        height: 140vh;
+        color: #fff;
+    }
+
+    .main__img {
+        display: none;
+    }
+
+    .main__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .main__container h2 {
+        color: #fff;
+        align-self: start;
+    }
+
+    .main__container form {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+    }
+
+    .form_box {
+        width: 100%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    span {
+        color: #fff;
+        font-weight: 500;
+        font-family: var(--font-poppins);
+    }
 }
