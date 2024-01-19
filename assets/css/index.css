@@ -65,7 +65,7 @@ body{
 
 /* traitement du deuxieme block */
 .main__container{
-    padding: 4rem 10rem;
+    padding: 4rem 10rem 2rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,11 +81,11 @@ body{
 
 /* traitement du formulaire */
 form{
-    height: 55%;
+    height: 58%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     align-items: center;
 }
 
@@ -102,6 +102,11 @@ form{
     color: var(--primary-color);
     margin-top: 1rem;
     font-family: var(--font-poppins);
+    text-decoration: none;
+}
+
+.form_box a:hover {
+    text-decoration: underline;
 }
 
 label{
@@ -115,43 +120,47 @@ label{
 /* traitement de l'emplacement d'insertion de l'email et du mot de passe */
 input{
     width: 100%;
-    height: 5rem;
+    height: 4.5rem;
     border-radius: 1rem;
     outline: none;
-    border: .2rem solid #17181f;
+    border: .1rem solid #17181f;
     padding: 0 3rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     transition: all .40s;
 }
 
 input:focus{
-    border: .2rem solid var(--primary-color);
+    border: .1rem solid var(--primary-color);
 }
 
 input[type="password"]::placeholder{
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 button{
     color: #fff;
     border: none;
-    padding: 1.4rem 6rem;
-    font-size: 1.8rem;
+    padding: 1rem 5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     font-family: var(--font-poppins);
     border-radius: 1rem;
     text-transform: capitalize;
     background: var(--primary-color);
-    transition: all .25s ease;
+    transition: all .30s ease;
 }
 
 button:active{
     transform: scale(.9);
 }
 
+button:hover{
+    box-shadow: .1rem .1rem 1rem .2rem  #17181f;
+}
+
 .main__container_other{
-    height: 10rem;
+    height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,18 +172,18 @@ button:active{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
 }
 
 span{
     font-size: 2rem;
-    text-transform: capitalize;
+    color: #17181f;
 }
 
 hr{
-    width: 20rem;
-    background: #17181f;
-    height: .2rem;
+    width: 18rem;
+    background: #17181f5b;
+    height: .13rem;
     border: none;
 }
 
@@ -192,9 +201,8 @@ hr{
 .main__container_other .other_2 .box{
     width: 6rem;
     height: 6rem;
-    overflow: hidden;
     background: var(--ternery-color);
-    padding: 1rem;
+    padding: .9rem;
     border-radius: 50%;
     border: .1rem solid #17181f1e;
     transition: all 1s ease;
