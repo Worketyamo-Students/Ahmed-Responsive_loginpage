@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <!-- div principal -->
+    <div class="main">
+        <!-- premier block  -->
+        <div class="main__img main_box">
+            <h1 title="logo">blue ocean</h1>
+        </div>
+        <!-- fin du premier block -->
+
+        <!-- debut du deuxieme block contenant le formulaire de connexion et d'autre methode de connecxion -->
+        <div class="main__container main_box">
+            <!-- titre -->
+            <h2>Connexion a Blue Ocean</h2>
+            <!-- creation du formulaire -->
+            <form action="" method="post">
+                <!-- creation de l'emplacement d'insertion de l'adresse email -->
+                <div class="form_box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Ahmed@example.com">
+                </div>
+                <!-- creation de l'emplacement d'insertion du mot de passe -->
+                <div class="form_box">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" placeholder="................">
+                    <a href="#" style="margin-left: 44rem; margin-top: .8rem; font-size: 1.8rem; color: var(--secondary-color)">Mot de passe oublié?</a>
+                </div>
+                <!-- creation du bouton de soumission -->
+                <button type="submit">Connexion</button>
+            </form>
+            <!-- creation d'autre methode de connexion -->
+            <div class="main__container_other">
+                <!-- titre -->
+                <div class="other_1">
+                    <hr>
+                    <span>ou avec</span>
+                    <hr>
+                </div>
+                <!-- methode de connexion -->
+                <div class="other_2">
+                    <div class="facebook box">
+                        <img src="./assets/img/logo-facebook.svg" alt="facebook">
+                    </div>
+                    <div class="google box">
+                        <img src="./assets/img/logo-google.svg" alt="google">
+                    </div>
+                    <div class="github box">
+                        <img src="./assets/img/logo-github.svg" alt="github">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin du deuxieme block -->
+    </div>
+    <!-- fin -->
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+/* emplacement de declaration des variables */
+:root{
+    --primary-color: #7286D3;
+    --ternery-color: #FFF2F2;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-rubik: 'Rubik Burned', system-ui;
+    --font-size-default: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: var(--font-size-default);
+    font-family: serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow-x: hidden;
+}
+
+/* traitement de la div principal */
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* traitement du premier et deuxieme block */
+.main_box{
+    height: 100%;
+}
+
+/* mise en place et traitement du premier block */
+.main__img{
+    background: url(../img/background.jpg) center top / cover;
+    padding: 8rem 2rem;
+    width: 40%;
+}
+
+/* traitement du logo */
+.main__img h1{
+    text-transform: capitalize;
+    font-size: 6rem;
+    color: #fff;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-weight: 800;
+    font-family: var(--font-rubik);
+    letter-spacing: .9rem;
+}
+
+/* traitement du deuxieme block */
+.main__container{
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.main__container h2{
+    font-size: 3.5rem;
+    color: #17181f;
+    font-weight: bold;
+    font-family: var(--font-poppins);
+}
+
+/* traitement du formulaire */
+form{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60rem;
+    align-items: center;
+}
+
+.form_box{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #17181f;
+    font-weight: bold;
+}
+
+/* traitement de l'emplacement d'insertion de l'email et du mot de passe */
+input{
+    width: 60rem;
+    height: 5rem;
+    border-radius: 1rem;
+    outline: none;
+    border: .2rem solid;
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    transition: all .40s;
+}
+
+input:hover{
+    border: .2rem solid var(--secondary-color);
+}
+
+input[type="password"]::placeholder{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+button{
+    color: #fff;
+    border: none;
+    padding: 1.5rem 6rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    background: var(--primary-color);
+    width: 30rem;
+    transition: all .25s ease;
+}
+
+button:active{
+    transform: scale(.9);
+}
+
+.main__container_other{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60rem;
+}
+
+.other_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+span{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+hr{
+    width: 25rem;
+    background: #000;
+    height: .3rem;
+    border: none;
+}
+
+.other_2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18rem;
+    width: 100%;
+}
+
+.main__container_other .other_2 .box{
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    transition: all 1s ease;
+}
+
+.main__container_other .other_2 .box:hover{
+    background: var(--primary-color);
+}
+
+.main__container_other .other_2 img{
+    width: 100%;
+    height: 100%;
+}
