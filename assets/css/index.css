@@ -156,7 +156,7 @@ button:active{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 60rem;
+    width: 90%;
 }
 
 .other_1{
@@ -173,7 +173,7 @@ span{
 
 hr{
     width: 20rem;
-    background: #000;
+    background: #17181f;
     height: .2rem;
     border: none;
 }
@@ -181,22 +181,27 @@ hr{
 .other_2{
     display: flex;
     justify-content: space-between;
-    padding: 0 18rem;
+    padding: 0 8rem;
     width: 100%;
 }
 
+.other_2 a {
+    text-decoration: none;
+}
+
 .main__container_other .other_2 .box{
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     overflow: hidden;
-    background: transparent;
+    background: var(--ternery-color);
+    padding: 1rem;
     border-radius: 50%;
-    border: none;
+    border: .1rem solid #17181f1e;
     transition: all 1s ease;
 }
 
 .main__container_other .other_2 .box:hover{
-    background: var(--primary-color);
+    transform: translateY(-10px);
 }
 
 .main__container_other .other_2 img{
