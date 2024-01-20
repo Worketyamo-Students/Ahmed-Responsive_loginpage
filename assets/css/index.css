@@ -261,6 +261,10 @@ hr{
         display: none;
     }
 
+    .other_1{
+        justify-content: center;
+    }
+
     span {
         color: #fff;
         font-weight: 500;
