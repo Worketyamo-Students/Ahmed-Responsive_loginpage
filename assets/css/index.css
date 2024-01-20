@@ -225,7 +225,7 @@ hr{
         background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 1.55%, rgba(0, 0, 0, 0.3) 51.18%)  ,url(../img/background.svg) center top / cover;
         overflow-x: hidden;
         padding: 4rem;
-        height: 140vh;
+        height: 120vh;
         color: #fff;
     }
 
