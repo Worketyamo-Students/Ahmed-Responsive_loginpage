@@ -4,12 +4,12 @@
 
 ### maket de le login page
 
-<img src="./assets/img/sign up page.svg">
+<img src="./assets/img/sign up page.svg" alt="design for desktop">
 
 ### premiere maket responsive
 
-<img src="./assets/img/result one.svg">
+<img src="./assets/img/result one.svg" alt="design for android">
 
 ### deuxieme maket responsive
 
-<img src="./assets/img/result tree.svg">
+<img src="./assets/img/result tree.svg" alt="design for android">
