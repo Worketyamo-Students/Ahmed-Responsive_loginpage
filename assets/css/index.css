@@ -278,4 +278,37 @@ hr{
         font-weight: 500;
         font-family: var(--font-poppins);
     }
+
+    .other_2 {
+        padding: 0 10rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .other_2 {
+        padding: 0 6rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .other_2 {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .other_2 {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .other_2 {
+        padding: 0;
+    }
+
+    .main__container_other .other_2 .box {
+        width: 5rem;
+        height: 5rem;
+    }
 }
