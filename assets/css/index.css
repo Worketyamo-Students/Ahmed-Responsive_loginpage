@@ -126,14 +126,14 @@ input{
     height: 4.5rem;
     border-radius: 1rem;
     outline: none;
-    border: .1rem solid #17181f;
+    border: .15rem solid #17181f;
     padding: 0 3rem;
     font-size: 1.5rem;
     transition: all .40s;
 }
 
 input:focus{
-    border: .1rem solid var(--primary-color);
+    border: .15rem solid var(--primary-color);
 }
 
 input[type="password"]::placeholder{
